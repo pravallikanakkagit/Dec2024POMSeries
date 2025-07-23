@@ -110,7 +110,7 @@ public class DriverFactory {
 				break;
 			case "stage":
 				System.out.println("running in Stage environment");
-				ip=new FileInputStream("src/test/resources/config/stage.config.properties");
+				ip=new FileInputStream("./src/test/resources/config/stage.config.properties");
 				break;
 			case "dev":
 				System.out.println("running in DEV environment");
