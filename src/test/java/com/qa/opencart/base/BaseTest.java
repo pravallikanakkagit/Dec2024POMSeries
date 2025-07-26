@@ -36,15 +36,16 @@ public class BaseTest {
 	protected ProductInfoPage productInfoPage;
 	protected RegisterPage registerPage;
 	private static final Logger log= LogManager.getLogger(BaseTest.class);
-	@Parameters({"browser"})
+	@Parameters({"browser","browserversion"})
 	@BeforeTest
-	public void setup(String browserName) {
+	public void setup(String browserName,String browserVersion) {
 		
 		df= new DriverFactory();
 		prop=df.initProp();
 		//browser name is passed from xml file
 		if(browserName!=null) {
 			prop.setProperty("browser", browserName);//here it updates the default browser value in config file to xml file browservalue based on test and parameters given
+			prop.setProperty("browserversion", browserVersion);
 		}
 		driver= df.initDriver(prop);
 		loginPage = new LoginPage(driver);

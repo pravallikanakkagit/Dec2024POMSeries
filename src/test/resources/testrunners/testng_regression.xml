@@ -14,54 +14,66 @@
 
 <test name="Login Page Test_chrome">
 	<parameter name="browser" value="chrome"/>
+	<parameter name="browserversion" value="126.0" />
+	<parameter name="testname" value="LoginPageTestChrome"/>
 	<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-	<!--<test name="Login Page Test_firefox">
+	<test name="Login Page Test_firefox">
 	<parameter name="browser" value="firefox"/>
+	<parameter name="browserversion" value="125.0" />
+		<parameter name="testname" value="LoginPageTestff"/>
 	<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-	<test name="Login Page Test_edge">
+	<!--<test name="Login Page Test_edge">
 	<parameter name="browser" value="edge"/>
 	<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>-->
 
-	<!--<test name="Account Page Test_chrome">
+	<test name="Account Page Test_chrome">
 	<parameter name="browser" value="chrome"/>
-	<classes>
-			<class name="com.qa.opencart.tests.AccountPageTest" />
-		</classes>
-	</test-->>
-	<test name="Accounts Page Test_firefox">
-	<parameter name="browser" value="firefox"/>
+	<parameter name="browserversion" value="123.0" />
+	<parameter name="testname" value="AccountPageTestChrome"/>
 	<classes>
 			<class name="com.qa.opencart.tests.AccountPageTest" />
 		</classes>
 	</test>
-	<test name="Accounts Page Test_edge">
+	<test name="Accounts Page Test_firefox">
+	<parameter name="browser" value="firefox"/>
+	<parameter name="browserversion" value="124.0" />
+	<parameter name="testname" value="AccountPageTestFF"/>
+	<classes>
+			<class name="com.qa.opencart.tests.AccountPageTest" />
+		</classes>
+	</test>
+	<!--<test name="Accounts Page Test_edge">
 	<parameter name="browser" value="edge"/>
 	<classes>
 			<class name="com.qa.opencart.tests.AccountPageTest" />
 		</classes>
-	</test>
-	<!--<test name="Search Test_chrome">
+	</test>-->
+	<test name="Search Test_chrome">
 	<parameter name="browser" value="chrome"/>
+	<parameter name="browserversion" value="113.0" />
+	<parameter name="testname" value="SearchTestChrome"/>
 	<classes>
 			<class name="com.qa.opencart.tests.SearchTest" />
 		</classes>
 	</test>
 	<test name="Search Test_firefox">
 	<parameter name="browser" value="firefox"/>
+	<parameter name="browserversion" value="105.0" />
+	<parameter name="testname" value="SearchTestFF"/>
 	<classes>
 			<class name="com.qa.opencart.tests.SearchTest" />
 		</classes>
 	</test>
-	<test name="Search Test_edge">
+<!--	<test name="Search Test_edge">
 	<parameter name="browser" value="edge"/>
 	<classes>
 			<class name="com.qa.opencart.tests.SearchTest" />
